@@ -1,5 +1,5 @@
 package one.digitalinnovation.gof.service;
-
+import one.digitalinnovation.gof.dto.ClienteDTO;
 import one.digitalinnovation.gof.model.Cliente;
 
 /**
@@ -15,10 +15,9 @@ public interface ClienteService {
 
 	Cliente buscarPorId(Long id);
 
-	void inserir(Cliente cliente);
+	Cliente inserir(ClienteDTO clienteDTO);
 
-	void atualizar(Long id, Cliente cliente);
+	Cliente atualizar(Long id, ClienteDTO clienteDTO);
 
 	void deletar(Long id);
-
 }
